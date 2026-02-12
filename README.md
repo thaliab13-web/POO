@@ -1,3 +1,6 @@
+![GitHub License](https://img.shields.io/github/license/thaliab13-web/POO)
+
+
 # Atividades práticas da disciplina de Programação Orientada a Objetos.
 
 
