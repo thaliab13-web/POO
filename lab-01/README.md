@@ -6,7 +6,7 @@
 
 ```bash
 git config --global user.name "nomeUsuario"
-git config --global user.email "emailUsuario"
+git config --global user.email "emailUsuario@..."
 ```
 
 Uma observação importante é que, com o comando abaixo, você pode confirmar qual usuário está configurado atualmente no Git:
@@ -14,7 +14,6 @@ Uma observação importante é que, com o comando abaixo, você pode confirmar q
 ```bash
 git config --global --list
 ```
----
 
 ## Criando Personal Access Token (PAT) no GitHub
 
@@ -35,6 +34,7 @@ Para criar um **PAT**, siga estes passos:
 4. Copie o token gerado e guarde-o em um local seguro, pois ele não será exibido novamente.
 
 
+---
 
 ## **Salvar em cache as credenciais do PAT** 
 
