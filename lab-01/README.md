@@ -48,22 +48,24 @@ git config --global credential.helper 'cache --timeout=3600'
 ```
 ---
 
-### **Qual a diferença entre git merge e git rebase?**
+## Qual a diferença entre git merge e git rebase?
+
 
 - **_git merge :_** Une o histórico de duas ramificações criando um **novo commit de mesclagem (merge commit)**. Ele preserva o histórico exato de quando as ramificações foram criadas e unidas.
 
-    ![alt text](image-1.png)
+   ![Diagrama Merge](imagem/merge.png)
+ 
 
-
+ 
  
  
  - **_git rebase :_**  "Reescreve" o histórico ao mover a base da sua ramificação atual para o final de outra ramificação (como **main**). Isso cria um **histórico linear**, e altera os identificadores (hashes) dos commits originais.
 
-    ![alt text](image-2.png)
+   ![Diagrama Rebase](imagem/rebase.png)
+   
 
 
-
- ### **Quando usar cada um?**
+ ## Quando usar cada um?
 
 - Use **_merge_** quando quiser preservar o histórico completo e mostrar claramente onde as branches se encontraram. É mais seguro em projetos com várias pessoas. 
 
