@@ -36,7 +36,7 @@ Para criar um **PAT**, siga estes passos:
 
 ---
 
-## **Salvar em cache as credenciais do PAT** 
+## Salvar em cache as credenciais do PAT
 
 A motivação para salvar as credenciais em cache é a praticidade, evitando que você precise digitar ou colar o seu PAT toda vez que realizar uma operação que exija autenticação (como git push ou git pull).
 
@@ -46,6 +46,8 @@ A motivação para salvar as credenciais em cache é a praticidade, evitando que
 ```bash
 git config --global credential.helper 'cache --timeout=3600'
 ```
+---
+
 ### **Qual a diferença entre git merge e git rebase?**
 
 - **_git merge :_** Une o histórico de duas ramificações criando um **novo commit de mesclagem (merge commit)**. Ele preserva o histórico exato de quando as ramificações foram criadas e unidas.
@@ -55,7 +57,7 @@ git config --global credential.helper 'cache --timeout=3600'
 
  
  
- - **_git rebase :_**  "Reescreve" o histórico ao mover a base da sua ramificação atual para o final de outra ramificação (como **main**). Isso cria um **histórico liner**, e altera os identificadores (hashes) dos commits originais.
+ - **_git rebase :_**  "Reescreve" o histórico ao mover a base da sua ramificação atual para o final de outra ramificação (como **main**). Isso cria um **histórico linear**, e altera os identificadores (hashes) dos commits originais.
 
     ![alt text](image-2.png)
 
