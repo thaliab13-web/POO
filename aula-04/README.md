@@ -73,13 +73,29 @@ O nome do arquivo deve ser idêntico ao nome da classe
 ### Nota
 > - Com o JDK 25 não a necessidade de declarar a classe.
 
+---
 
 Nova forma de dar um print (escreva):
 ```bash
 void main() {
         IO.print("Olá, mundo!");
-    }
+}
 ```   
 ---
-## Conceitos da linguagem Java
+## Conceitos básicos da linguagem Java
 
+### Tipos Primitivos em Java
+
+```text
+Tipo	    Tamanho	    Descrição	                Exemplo
+---------------------------------------------------------------------------
+int	        32 bits	    Número inteiro	            int i = 10;
+long	    64 bits	    Inteiro longo	            long l = 100000L;
+short	    16 bits	    Inteiro curto	            short s = 1000;
+byte	    8 bits	    Byte	                    byte y = 127;
+float	    32 bits 	Ponto flutuante	float       f = 3.14f;
+double	    64 bits	    Ponto flutuante (preciso)	double d = 3.14159;
+boolean	    1 bit*	    Valor lógico	            boolean b = true;
+char	    16 bits	    Caractere (Unicode)	        char c = 'A';
+```
+Tipos primitivos possuem tamanho fixo e armazenam valores simples.
