@@ -99,3 +99,51 @@ boolean	    1 bit*	    Valor lógico	            boolean b = true;
 char	    16 bits	    Caractere (Unicode)	        char c = 'A';
 ```
 Tipos primitivos possuem tamanho fixo e armazenam valores simples.
+
+---
+
+## Classe utilitária Math3 e classe Random4
+
+1. Math.sqrt(25):
+
+- `Math`é uma **classe utilitária do Java** que fornece funções matemáticas.
+- `sqrt()` calcula a raiz quadrada de um número.
+
+### Classe `Math`
+
+- **Raiz quadrada**:
+```java
+double d = Math.sqrt(25); 
+System.out.println(d); // 5.0 
+```
+
+- **Potência**:
+```java
+d = Math.pow(4, 2); // resultado: 16.0
+```
+
+- **Funções trigonométricas** (ângulos em radianos):
+```java
+double radians = Math.toRadians(45); //converte 45° para radianos
+d = Math.sin(radians); // seno de 45°
+d = Math.cos(radians); // cosseno  de 45°
+d = Math.tan(radians); // tangente  de 45°
+```
+
+- **Arredondamento**:
+```java
+long n = Math.round(4.5632); // resultado: 16.0
+```
+
+---
+
+### Classe `Random`
+
+Usada para gerar números pseudo-aleatórios:
+
+```java
+import java.util.Random;
+
+Random r = new Random();
+int i = r.nextInt(10); //gera um número de 0 a 9
+```
