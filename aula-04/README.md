@@ -1,7 +1,7 @@
 # Iniciando no universo de Java
 
 <p align="center">
-    <img src="java2.jpg" alt="img" width="300">
+    <img src="img/java2.jpg" alt="img" width="300">
 </p>
 
 
