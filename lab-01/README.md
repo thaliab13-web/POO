@@ -52,17 +52,18 @@ git config --global credential.helper 'cache --timeout=3600'
 
 
 - **_git merge :_** Une o histórico de duas ramificações criando um **novo commit de mesclagem (merge commit)**. Ele preserva o histórico exato de quando as ramificações foram criadas e unidas.
-
-   ![Diagrama Merge](imagem/merge.png)
  
+ <p align="center">
+    <img src="imagem/merge.png" alt="merge" width="300">
+</p>
 
- 
  
  
  - **_git rebase :_**  "Reescreve" o histórico ao mover a base da sua ramificação atual para o final de outra ramificação (como **main**). Isso cria um **histórico linear**, e altera os identificadores (hashes) dos commits originais.
-
-   ![Diagrama Rebase](imagem/rebase.png)
    
+<p align="center">
+    <img src="imagem/rebase.png" alt="rebase" width="300">
+</p>
 
 
  ## Quando usar cada um?
