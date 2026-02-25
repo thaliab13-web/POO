@@ -52,14 +52,6 @@ Contém:
 ---
 
 
-
-
-
-
-
-
-
-
 ## Primeiros passos em Java
 
 Um programa em Java consiste em um coleção de classes
@@ -130,6 +122,13 @@ d = Math.cos(radians); // cosseno  de 45°
 d = Math.tan(radians); // tangente  de 45°
 ```
 
+- **Retorna o valor absoluto de um valor.int**:
+```java
+int i = -10;
+int j = Math.abs(i);
+```
+
+
 - **Arredondamento**:
 ```java
 long n = Math.round(4.5632); // resultado: 16.0
@@ -147,3 +146,5 @@ import java.util.Random;
 Random r = new Random();
 int i = r.nextInt(10); //gera um número de 0 a 9
 ```
+### Link para o site Resumo do Método
+> - https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
