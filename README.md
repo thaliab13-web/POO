@@ -6,10 +6,13 @@
 
 ## Laboratorios 
 
-[laboratorio 1](src/main/java/lab01) - Sistema de controle de versão
+#### [Laboratorio 1](src/main/java/lab01) - Sistema de controle de versão
+
+#### [Laboratorio 2](src/main/java/lab01) - Construção de projetos com gradle
+
 
 ## Aulas 
 
-[aula 01](src/main/java/aula01) - Introdução a linguaguem java
+#### [Aula 01](src/main/java/aula01) - Introdução a linguaguem java
 
-[aula 04](src/main/java/aula04) - Revisão sobre linguagem Java 
+#### [Aula 04](src/main/java/aula04) - Revisão sobre linguagem Java 
