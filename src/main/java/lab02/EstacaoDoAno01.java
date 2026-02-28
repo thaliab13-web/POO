@@ -1,15 +1,20 @@
 package lab02;
 
+/// Estação do ano. Faça um programa que leia do teclado um número inteiro que representa o
+/// dia, e uma string que representa o mês. Por fim, imprima na tela a estação do ano correspondente aqui no Brasil.
+
 public class EstacaoDoAno01 {
 
     static void main() {
 
         String diaS = IO.readln("Entre com o dia: ");
-        int dia = Integer.parseInt(diaS);
+        int dia = Integer.parseInt(diaS); /// convertendo String para int
 
-        String mes = IO.readln("Entre com o mes: ").toLowerCase(); // converte para minusculo
+        //int dia = Integer.parseInt(IO.readln("Entre com o dia: "));
 
-        if ((mes.equals("marco") && dia >= 20)
+        String mes = IO.readln("Entre com o mes: ").toLowerCase(); /// converte para minusculo
+
+        if ((mes.equals("marco") && dia >= 20) ///  equals verifica a igualdade
                 || mes.equals("abril")
                 || mes.equals("maio")
                 || (mes.equals("junho") && dia < 21)) {
@@ -34,7 +39,6 @@ public class EstacaoDoAno01 {
                 || mes.equals("janeiro")
                 || mes.equals("fevereiro")
                 || (mes.equals("marco") && dia < 20)) {
-
 
             IO.println("Verão");
 
