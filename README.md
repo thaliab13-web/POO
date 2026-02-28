@@ -8,7 +8,7 @@
 
 #### [Laboratorio 1](src/main/java/lab01) - Sistema de controle de versão
 
-#### [Laboratorio 2](src/main/java/lab01) - Construção de projetos com gradle
+#### [Laboratorio 2](src/main/java/lab02) - Construção de projetos com gradle
 
 
 ## Aulas 
