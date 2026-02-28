@@ -6,10 +6,10 @@
 
 ## Laboratorios 
 
-[laboratorio 1](lab-01) - Sistema de controle de versão
+[laboratorio 1](src/main/java/lab01) - Sistema de controle de versão
 
 ## Aulas 
 
-[aula 01](aula-01) - Introdução a linguaguem java
+[aula 01](src/main/java/aula01) - Introdução a linguaguem java
 
-[aula 04](aula-04) - Revisão sobre linguagem Java 
+[aula 04](src/main/java/aula04) - Revisão sobre linguagem Java 
