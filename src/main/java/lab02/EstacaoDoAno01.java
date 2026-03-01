@@ -6,6 +6,7 @@ package lab02;
 public class EstacaoDoAno01 {
 
     static void main() {
+        
 
         String diaS = IO.readln("Entre com o dia: ");
         int dia = Integer.parseInt(diaS); /// convertendo String para int
@@ -40,7 +41,7 @@ public class EstacaoDoAno01 {
                 || mes.equals("fevereiro")
                 || (mes.equals("marco") && dia < 20)) {
 
-            IO.println("Verão");
+            IO.println("Verão.");
 
         } else {
 
