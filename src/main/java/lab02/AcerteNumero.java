@@ -16,7 +16,7 @@ public class AcerteNumero {
 
         IO.println();
         IO.println("************************************************************");
-        IO.println("*               Adivinhe o número entre 1 e 100          *");
+        IO.println("*               Adivinhe o número entre 1 e 100            *");
         IO.println("************************************************************");
 
         //  Enquanto o palpite for diferente do número Aleatório ele roda, quando for igual ele sai fora
@@ -25,7 +25,7 @@ public class AcerteNumero {
             palpite = Integer.parseInt(IO.readln("Qual é o seu Palpite? "));
             tentativasRealizadas++; // incrementando o contador com a qtd de vezes que vai rodar o programa
 
-        if(palpite == numAleatorio) {
+        if(palpite == numAleatorio) { // se palpite for igual ao numero Aleatorio então entre
             IO.println("Parabéns você acertou");
             IO.println("Precisou de " + tentativasRealizadas + " tentativa(s)");
             IO.println("************************************************************");
