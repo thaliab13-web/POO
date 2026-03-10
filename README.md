@@ -13,6 +13,8 @@
 
 ## Aulas 
 
-#### [Aula 01](src/main/java/aula01) - Introdução a linguaguem java
+#### [Aula 01](src/main/java/aula01) - Introdução a linguaguem Java
 
 #### [Aula 04](src/main/java/aula04) - Revisão sobre linguagem Java 
+
+#### [Aula 05](src/main/java/aula05) - Introdução ao Paradigma da Orientação a Objetos
