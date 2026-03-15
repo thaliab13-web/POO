@@ -3,13 +3,15 @@
 
 ## 1. Classe para representador um contador
 
-**A classe Contador possui um único atributo:**
+A classe Contador possui um único atributo:
 - valorAtual
 
 **A classe provê métodos para:** 
 - Atribuir um valor ao contador
 - Incrementar em 1 o valor do contador
 - Obter o atual valor do contador
+
+> [Exercicio Contador](Contador.java)
 
 ---
 
@@ -20,12 +22,16 @@
 - Implemente uma classe Java para representar esse personagem
 - Crie uma outra classe com o método main e instancie um objeto da classe Personagem
 
+> [Exercicio Personagem](Personagem.java)
+
 ---
 ## 3. Batedeira planetária
   
 - Pense em um contexto e realize o processo de abstração para coletar as informações essenciais (atributos e métodos) deste objeto para o contexto escolhido.
 - Implemente uma classe Java para representar esse objeto.
 - Crie uma outra classe com o método main e instancie um objeto da classe Batedeira
+
+> [Exercicio Batedeira](Batedeira.java)
 
 ---
 
@@ -35,3 +41,4 @@
 - Implemente uma classe Java para representar essa disciplina
 - Crie uma outra classe com o método main e instancie um objeto da classe Disciplina
 
+> [Exercicio Sistema Acadêmico](SistemaAcademico.java)
