@@ -30,6 +30,8 @@ public class Caneta {
     public String getCor() {
         return cor;
     }
+
+
     public void setCor(String c) {
         cor = c;
     }
