@@ -19,4 +19,4 @@
 
 #### [Aula 05](src/main/java/aula05) - Introdução ao Paradigma da Orientação a Objetos
 
-#### [Aula 10](src/main/java/aula10) - 
+#### [Aula 10](src/main/java/aula10) - Encapsulamento (GET e SET)
