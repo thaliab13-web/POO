@@ -4,6 +4,8 @@
 # Atividades práticas da disciplina de Programação Orientada a Objetos.
 
 
+#### [Treinando em Casa](src/main/java/treinandoEmCasa) - Exercicios de POO
+
 ## Laboratorios 
 
 #### [Laboratorio 1](src/main/java/lab01) - Sistema de controle de versão
