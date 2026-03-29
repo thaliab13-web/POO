@@ -12,6 +12,9 @@
 
 #### [Laboratorio 2](src/main/java/lab02) - Construção de projetos com gradle
 
+#### [Laboratorio 3](src/main/java/lab03) - Prática com construtor, modificadores, sobrecarga, membros estáticos e finais
+
+
 
 ## Aulas 
 
