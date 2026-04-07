@@ -25,3 +25,5 @@
 #### [Aula 05](src/main/java/aula05) - Introdução ao Paradigma da Orientação a Objetos
 
 #### [Aula 10](src/main/java/aula10) - Encapsulamento (GET e SET)
+
+#### [Aula 15](src/main/java/aula15) - Java API Collections e Streams
