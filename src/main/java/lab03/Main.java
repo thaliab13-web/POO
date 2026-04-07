@@ -3,27 +3,48 @@ package lab03;
 public class Main {
     static void main() {
 
-        IO.println();
 
-        Data d1 = new Data();
-        IO.println("Data1 --> " + d1);
-        IO.println(d1.porExtenso());
+        Robo r1 = new Robo("r1", "Azul");
+        Robo r2 = new Robo("r2", "verde");
+        Robo r3 = new Robo("r3", "preto");
+        Robo r4 = new Robo("r4", "cinza");
 
-        IO.println();
-
-        Data d2 = new Data(0,0,1999);
-        IO.println("Data2 corrigida --> " + d2);
-        IO.println(d2.porExtenso());
-        IO.println();
-
-        Data d3 = new Data(0,0,2025);
-        IO.println(d3);
+        IO.println(r1);
+        IO.println(r2);
+        IO.println(r3);
+        IO.println(r4);
+        IO.println(Robo.getTotalRobosCriados());
 
 
 
-        // diferença entre as datas
-        long diferenca = d1.diferencaDeDias(d2);
-        IO.println("Diferença de dias:  " + diferenca);
+
+
+
+
+
+
+
+//        IO.println();
+//
+//        Data d1 = new Data();
+//        IO.println("Data1 --> " + d1);
+//        IO.println(d1.porExtenso());
+//
+//        IO.println();
+//
+//        Data d2 = new Data(0,0,1999);
+//        IO.println("Data2 corrigida --> " + d2);
+//        IO.println(d2.porExtenso());
+//        IO.println();
+//
+//        Data d3 = new Data(0,0,2025);
+//        IO.println(d3);
+//
+//
+//
+//        // diferença entre as datas
+//        long diferenca = d1.diferencaDeDias(d2);
+//        IO.println("Diferença de dias:  " + diferenca);
 
 
 
