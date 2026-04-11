@@ -3,11 +3,11 @@ package aula15;
 public class Conta {
     private String titular;
     private double saldo;
-    private  String numero;
+    private  String numeroConta;
 
-    public Conta(String titular, String numero, double saldo) {
+    public Conta(String titular, String numeroConta, double saldo) {
         this.titular = titular;
-        this.numero = numero;
+        this.numeroConta = numeroConta;
         this.saldo = (saldo > 0) ? saldo : 0;
     }
 
@@ -34,7 +34,7 @@ public class Conta {
                 Conta: %s
                 Titular: %s
                 Saldo: %.2f
-                """, numero, titular, saldo);
+                """, numeroConta, titular, saldo);
     }
 
     public String getTitular() {
@@ -46,12 +46,12 @@ public class Conta {
     }
 
     // me devolve o número dessa conta
-    public String getNumero() {
-        return numero;
+    public String getNumeroConta() {
+        return numeroConta;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNumero(String numeroConta) {
+        this.numeroConta = numeroConta;
     }
 
     public double getSaldo() {

@@ -53,11 +53,11 @@ public class App {
     /* método cadastrar */
     void cadastrar() {
         var titular = IO.readln("Nome do titular: ");
-        var numero = IO.readln("Número da conta: ");
+        var numeroConta = IO.readln("Número da conta: ");
         var saldo = Double.parseDouble(IO.readln("Saldo inicial: "));
 
         /* Criando uma conta nova */
-        Conta conta = new Conta(titular, numero, saldo);
+        Conta conta = new Conta(titular, numeroConta, saldo);
 
         /* guardando a conta dentro da lista */
         contas.add(conta);
@@ -73,6 +73,10 @@ public class App {
         for (Conta c : contas) {
             IO.println(c.toString());
         }
+
+//        contas.forEach(c -> IO.println(c));
+
+//        contas.forEach(IO::println);
     }
 
 //     Descobrir qual conta p usuario quer
@@ -85,11 +89,13 @@ public class App {
         /* for passa por TODAS as contas */
         for (Conta c : contas) {
             // Se o número dessa conta for igual ao número digitado
-            if (c.getNumero().equals(numero)) {
+            if (c.getNumeroConta().equals(numero)) {
                 double valor = Double.parseDouble(IO.readln("Valor de Depósito? "));
                 c.depositar(valor); // Conta c, adiciona esse valor no saldo
                 IO.println(String.format("Depósito de %.2f realizado!", valor));
                 IO.println(String.format("Saldo atual: %.2f", c.getSaldo()));
+
+                // return quebra o for
                 return;
             }
         }
@@ -103,7 +109,7 @@ public class App {
 
         // Para cada Conta 'c' dentro de contas
         for (Conta c : contas) {
-            if (c.getNumero().equals(numero)) {
+            if (c.getNumeroConta().equals(numero)) {
                 double valor = Double.parseDouble(IO.readln("Valor do Saque? "));
                 c.sacar(valor);
                 IO.println(String.format("Saque de %.2f realizado!", valor));
@@ -119,16 +125,12 @@ public class App {
         App app = new App();
         app.menu();
 
-
         // ..:: Menu ::..
         // 1 - Cadastarr conta
         // 2 - Listar todas contas
         // 3 - Depositar em uma conta
         // 4 - sacar de uma conta
         // 5 - Sair
-
-
-
 
     }
 }
