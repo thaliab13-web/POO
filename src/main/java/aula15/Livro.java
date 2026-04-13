@@ -1,7 +1,5 @@
 package aula15;
 
-import java.util.StringJoiner;
-
 public class Livro {
 
     // Sistema de uma livraria para gestão de acervo
@@ -10,6 +8,9 @@ public class Livro {
     private String anoLancamento;
     private String nomeLivro;
 
+    // Construtor, inicializa o estado do objeto
+    // definindo valores iniciais para seus atributos  e garatindo
+    // que objeto seja criado em um estado válido
     public Livro(String ISBN, String nomeLivro, String anoLancamento, String autor) {
         this.ISBN = ISBN;
         this.nomeLivro = nomeLivro;
@@ -17,6 +18,7 @@ public class Livro {
         this.autor = autor;
     }
 
+    // retornando a chave ISBN
     public String getISBN() {
         return ISBN;
     }
