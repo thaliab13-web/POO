@@ -6,36 +6,14 @@ public class Motor {
     private int giroAtual;
     private int cilindros;
 
-    public Motor(int hp, int cilindros, int giroAtual) {
-        this.hp = hp;
-        this.cilindros = cilindros;
-        this.giroAtual = giroAtual;
+    // construtor, inicializando os atributos
+    public Motor() {
+        this.hp = 144;
+        this.cilindros = 5;
+        this.giroAtual = 0;
     }
     public void acelerar(int velocidade) {
         this.giroAtual += velocidade;
-    }
-
-    public int getHp() {
-        return hp;
-    }
-
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
-
-    public int getCilindros() {
-        return cilindros;
-    }
-
-    public void setCilindros(int cilindros) {
-        this.cilindros = cilindros;
-    }
-
-    public int getGiroAtual() {
-        return giroAtual;
-    }
-
-    public void setGiroAtual(int giroAtual) {
-        this.giroAtual = giroAtual;
+        IO.println("Motor agora está com giro: " + giroAtual);
     }
 }
