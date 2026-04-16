@@ -1,13 +1,13 @@
 package treinandoEmCasa;
 
-public class Carro {
+public class Carr {
 
     /* Atributos */
     private String modelo;
     private int velocidadeMaxima;
     private int velocidadeAtual;
 
-    public Carro(String modelo, int velocidadeMaxima) {
+    public Carr(String modelo, int velocidadeMaxima) {
 
         /* atributo = valor recebido */
         this.modelo = modelo;
@@ -22,7 +22,7 @@ public class Carro {
 
     /* Construtor com apenas modelo */
 
-    public Carro(String modelo) {
+    public Carr(String modelo) {
         this.modelo = modelo;
         this.velocidadeMaxima = VELOCIDADE_MAXIMA_MODELOS;
     }

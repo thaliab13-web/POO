@@ -27,3 +27,5 @@
 #### [Aula 10](src/main/java/aula10) - Encapsulamento (GET e SET)
 
 #### [Aula 15](src/main/java/aula15) - Java API Collections e Streams
+
+#### [Aula 16](src/main/java/aula16) - Diagrama de Classe UML
