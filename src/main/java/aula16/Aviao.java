@@ -7,14 +7,17 @@ public class Aviao {
     private int tripulantes;
     private int passageiros;
     private int combustivel;
-    private ArrayList<MotorAviao> motores;
+    private ArrayList<MotorAviao> qtdMotores;
 
     // construtor (Inicializando os atributos)
-    public Aviao(int t, int p, int c){
-        this.tripulantes = t;
-        this.passageiros = p;
-        this.combustivel = c;
-        this.motores = new ArrayList<>();
+    public Aviao(int tripulantes, int passageiros, int combustivel, String tipoDoMotor,int qtdMotores){
+        this.tripulantes = tripulantes;
+        this.passageiros = passageiros;
+        this.combustivel = combustivel;
+        this.qtdMotores = new ArrayList<>();
+        if(qtdMotores < 1 || qtdMotores > 8) {
+
+        }
     }
 
 
