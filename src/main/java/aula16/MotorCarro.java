@@ -1,13 +1,13 @@
 package aula16;
 
-public class Motor {
+public class MotorCarro {
 
     private int hp;
     private int giroAtual;
     private int cilindros;
 
     // construtor, inicializando os atributos
-    public Motor() {
+    public MotorCarro() {
         this.hp = 144;
         this.cilindros = 5;
         this.giroAtual = 0;

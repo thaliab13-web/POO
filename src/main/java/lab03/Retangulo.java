@@ -68,7 +68,7 @@ public class Retangulo {
         return altura;
     }
 
-    // metodo get (acessores) retorna valor
+    // metodo get (acessores) reetorna valor
     public String getCodi() {
         return codi;
     }

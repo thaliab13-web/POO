@@ -4,23 +4,16 @@ public class Main {
 
     static void main(String[] args) {
 
-        Motor motor1 = new Motor();
-        Carro carro = new Carro("BWN", motor1);
+        MotorCarro motorCarro1 = new MotorCarro();
+        Carro carro = new Carro("BWN", motorCarro1);
         IO.println();
         carro.acelerar(10);
 
-        Motor motor2 = new Motor();
-        Carro carro2 = new Carro("Toyota", motor2);
-        carro.trocarMotor(motor2);
+        MotorCarro motorCarro2 = new MotorCarro();
+        Carro carro2 = new Carro("Toyota", motorCarro2);
+        carro.trocarMotor(motorCarro2);
         IO.println();
-       carro2.acelerar(20);
-
-
-
-
-
-
-
+        carro2.acelerar(20);
 
 
 //        // Agregação = usar um objeto que já existe

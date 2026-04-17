@@ -12,7 +12,7 @@ public class Lampada {
 
     boolean isDesligar() {
       ligada = false;
-      return ligada;
+      return false;
     }
 
     public void mostrarDados() {
