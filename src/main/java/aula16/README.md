@@ -77,7 +77,7 @@ classDiagram
     class MotorAviao {
         - tipoDoMotor: String
         - estadoAtual: boolean 
-        + Motor(tipoDoMotor String)
+        + MotorAviao(tipoDoMotor String)
         + ligar() void
         + desligar() void
     }

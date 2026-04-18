@@ -16,20 +16,41 @@ public class MotorAviao {
         }
     }
 
-    // metodo ligar Motor
+    public boolean getEstadoAtual() {
+        return estadoAtual;
+    }
+
+    public void setEstadoAtual(boolean estadoAtual) {
+        this.estadoAtual = estadoAtual;
+    }
+
+    public String getTipoDoMotor() {
+        return tipoDoMotor;
+    }
+
+    public void setTipoDoMotor(String tipoDoMotor) {
+        this.tipoDoMotor = tipoDoMotor;
+    }
+
+    // método ligar Motor
     public boolean ligar() {
         if (!estadoAtual) {
             estadoAtual = true;
         }// senão permanece como esta
         return estadoAtual;
     }
-    // metodo desligar Motor
+    // método desligar Motor
     public boolean desligar() {
+       // (estadoAtual == true)
         if(estadoAtual) {
             estadoAtual = false;
         }
         return estadoAtual;
     }
+    // ou public boolean desligar()
+    // estadoAtual = false;
+    // return estadoAtual;
+
 
 }
 

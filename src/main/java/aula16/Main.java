@@ -4,16 +4,58 @@ public class Main {
 
     static void main(String[] args) {
 
-        MotorCarro motorCarro1 = new MotorCarro();
-        Carro carro = new Carro("BWN", motorCarro1);
-        IO.println();
-        carro.acelerar(10);
 
-        MotorCarro motorCarro2 = new MotorCarro();
-        Carro carro2 = new Carro("Toyota", motorCarro2);
-        carro.trocarMotor(motorCarro2);
+        Aviao aviao = new Aviao(2, 10, 15,"turbina", 4);
+
+
+        IO.println("Quantidade de Motores: "  + aviao.getMotores().size());
+        aviao.verStatus();
         IO.println();
-        carro2.acelerar(20);
+
+        IO.println("Ligando todos os motores");
+        aviao.ligar();
+        aviao.verStatus();
+        IO.println();
+
+        IO.println("Desligando todos os motores");
+        aviao.desligar();
+        aviao.verStatus();
+        IO.println();
+
+        IO.println("Ligar o motor 2 ");
+        aviao.ligarMotor(2);
+        aviao.verStatus();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        MotorCarro motorCarro1 = new MotorCarro();
+//        Carro carro = new Carro("BWN", motorCarro1);
+//        IO.println();
+//        carro.acelerar(10);
+//
+//        MotorCarro motorCarro2 = new MotorCarro();
+//        Carro carro2 = new Carro("Toyota", motorCarro2);
+//        carro.trocarMotor(motorCarro2);
+//        IO.println();
+//        carro2.acelerar(20);
 
 
 //        // Agregação = usar um objeto que já existe
