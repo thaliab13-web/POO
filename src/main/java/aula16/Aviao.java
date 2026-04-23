@@ -29,37 +29,7 @@ public class Aviao {
         }
     }
 
-    public int getCombustivel() {
-        return combustivel;
-    }
-
-    public void setCombustivel(int combustivel) {
-        this.combustivel = combustivel;
-    }
-
-    public ArrayList<MotorAviao> getMotores() {
-        return motores;
-    }
-
-    public void setMotores(ArrayList<MotorAviao> motores) {
-        this.motores = motores;
-    }
-
-    public int getPassageiros() {
-        return passageiros;
-    }
-
-    public void setPassageiros(int passageiros) {
-        this.passageiros = passageiros;
-    }
-
-    public int getTripulantes() {
-        return tripulantes;
-    }
-
-    public void setTripulantes(int tripulantes) {
-        this.tripulantes = tripulantes;
-    }
+    
 
     // método ligar Aviao e Motor
     public void ligar() {
@@ -107,6 +77,5 @@ public class Aviao {
             IO.println("Motor n° " + (i + 1) + " - status: " + motores.get(i).getEstadoAtual());
         }
     }
-
 
 }
