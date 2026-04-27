@@ -6,15 +6,15 @@
 
 #### [Treinando em Casa](src/main/java/treinandoEmCasa) - Exercicios de POO
 
-## Laboratorios 
+## Laboratórios
 
-#### [Laboratorio 1](src/main/java/lab01) - Sistema de controle de versão
+#### [Laboratório  1](src/main/java/lab01) - Sistema de controle de versão
 
-#### [Laboratorio 2](src/main/java/lab02) - Construção de projetos com gradle
+#### [Laboratório  2](src/main/java/lab02) - Construção de projetos com gradle
 
-#### [Laboratorio 3](src/main/java/lab03) - Prática com construtor, modificadores, sobrecarga, membros estáticos e finais
+#### [Laboratório  3](src/main/java/lab03) - Prática com construtor, modificadores, sobrecarga, membros estáticos e finais
 
-
+#### [Laboratório  17](src/main/java/lab17) - Associação entre classes e diagrama de classes UML
 
 ## Aulas 
 
@@ -24,8 +24,9 @@
 
 #### [Aula 05](src/main/java/aula05) - Introdução ao Paradigma da Orientação a Objetos
 
-#### [Aula 10](src/main/java/aula10) - Encapsulamento (GET e SET)
+#### [Aula 10](src/main/java/aula10) - Classes, objetos, métodos, atributos e modificadores de acesso (GET e SET)
 
-#### [Aula 15](src/main/java/aula15) - Java API Collections e Streams
+#### [Aula 15](src/main/java/aula15) - Coleções Java: listas, conjuntos e mapas; for each, lambdas e method reference
 
-#### [Aula 16](src/main/java/aula16) - Diagrama de Classe UML
+#### [Aula 16](src/main/java/aula16) - Associação entre classes e diagrama de classes UML
+
