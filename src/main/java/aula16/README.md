@@ -129,6 +129,7 @@ classDiagram
     }
     
     Livro "1" *-- "1..*" Capitulo
+    
 ```
 
 ```java

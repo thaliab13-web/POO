@@ -71,11 +71,11 @@ public class Aviao {
 
     }
 
-    // método ver estado do motor (ligado ou desligado)
-    public void verStatus() {
-        for (int i = 0; i < motores.size(); i++) {
-            IO.println("Motor n° " + (i + 1) + " - status: " + motores.get(i).getEstadoAtual());
-        }
-    }
+//    // método ver estado do motor (ligado ou desligado)
+//    public void verStatus() {
+//        for (int i = 0; i < motores.size(); i++) {
+//            IO.println("Motor n° " + (i + 1) + " - status: " + motores.get(i).getEstadoAtual());
+//        }
+//    }
 
 }

@@ -4,6 +4,49 @@ public class Main {
 
     static void main() {
 
+
+
+        Autor a1 = new Autor(1, "Mar");
+        Autor a2 = new Autor(2, "Thalia");
+
+        Editora editora = new Editora(1, "CU", "SC");
+
+        Edicao ed1 = new Edicao(1, 2010, 256, "codigo", editora);
+        Edicao ed2 = new Edicao(2, 2017, 300, "Ala", editora);
+
+        Livro l1 = new Livro(123, "Opa", "PT");
+        Livro l2 = new Livro(456, "Logo", "ES");
+
+        // relacionamentos
+        l1.adicionarEdicao(ed1);
+        l1.adicionarAutor(a1);
+
+        l2.adicionarEdicao(ed2);
+        l2.adicionarAutor(a2);
+
+        // exibir
+        IO.println(l1);
+        IO.println(l2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //        Carr carro1 = new Carr("Gol", 150);
 //
 //        // Velocidade maxima (300) para esse modelo
