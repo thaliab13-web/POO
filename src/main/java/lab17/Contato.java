@@ -19,6 +19,7 @@ public class Contato {
         this.emails = new ColecaoEmail();
     }
     public String getNome() { return nome;}
+    public String getSobrenome() { return sobrenome;}
 
     // delegando a responsabilidade pra outra classe
     public boolean addTelefone(String rotulo, String valor) {
