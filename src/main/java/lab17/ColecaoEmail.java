@@ -19,7 +19,6 @@ public class ColecaoEmail {
     // retorna boolean indica se conseguiu add ou não
     // método para adicionar rotulo(casa, comercial) e valor(larat@gmail.com) no email
     public boolean add(String rotulo, String valor) {
-
       // validar email primeiro, valor = email
         if(!validarEmail(valor)) return false;
 

@@ -1,14 +1,13 @@
 package lab17;
 
+import java.time.LocalDate;
+
 public class App {
 
     private Agenda agenda;
 
     public App() {
         this.agenda = new Agenda();
-    }
-    public void main() {
-
     }
 
     void menu() {
@@ -26,7 +25,7 @@ public class App {
                        """ ));
             switch (opcao) {
                 case 1:
-                    adicionarContat();
+                    adicionarContato();
                     break;
                 case 2:
                     removerContato();
@@ -50,6 +49,19 @@ public class App {
             }
 
         }while (opcao != 6);
+    }
+    void adicionarContato() {
+        var nome = IO.readln("Nome: ");
+        var sobrenome = IO.readln("Sobrenome: ");
+//        LocalDate data = LocalDate.parse(d
+        var dataNasc = IO.readln("Data nascimento: ");
+
+        var contato = new Contato(nome, sobrenome, dataNasc);
+        if ( this.agenda.adicionarContato(contato)){
+            IO.println("Adicionado contato com sucesso!");
+        }else{
+            IO.println("Sem sucesso!");
+        }
     }
 
     static void main(String[] args) {

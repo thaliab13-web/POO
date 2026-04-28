@@ -1,6 +1,5 @@
 package lab17;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Agenda {
@@ -8,8 +7,8 @@ public class Agenda {
 
     // adicionando contatos a lista
     public boolean adicionarContato(Contato c) {
-       if (c == null) return false;
-       contatos.add(c); // adiciona o contato atual na lista
+        if (c == null) return false;
+        contatos.add(c); // adiciona o contato atual na lista
         return true;
     }
 
@@ -31,14 +30,63 @@ public class Agenda {
 
         for (Contato c : contatos) {
             if (c.getNome().equalsIgnoreCase(nome) &&
-            c.getSobrenome().equalsIgnoreCase(sobrenome));
+                    c.getSobrenome().equalsIgnoreCase(sobrenome));
 
             encontrados.add(c);
         }
         return encontrados;
     }
 
+    public boolean removerContato(int indiceContatoNaLista) {
+        if (indiceContatoNaLista < 0 ||
+                indiceContatoNaLista >= contatos.size()) return false;
+        contatos.remove(indiceContatoNaLista);
+        return true;
+    }
 
+    public boolean addTelefone(String rotulo, String valor, int indiceContatoNaLista) {
+        if (indiceContatoNaLista < 0 ||
+                indiceContatoNaLista >= contatos.size()) return false;
+        var c = contatos.get(indiceContatoNaLista);
+       return c.addEmail(rotulo, valor);
 
+    }
 
+    public boolean addEmail(String rotulo, String valor, int indiceContatoNaLista) {
+        if (indiceContatoNaLista < 0 ||
+                indiceContatoNaLista >= contatos.size()) return false;
+        var c = contatos.get(indiceContatoNaLista);
+       return c.addEmail(rotulo, valor);
+
+    }
+    public boolean updateTelefone(String rotulo, String valor, int indiceContatoNaLista) {
+        if (indiceContatoNaLista < 0 ||
+            indiceContatoNaLista >= contatos.size()) return false;
+        var c = contatos.get(indiceContatoNaLista);
+        return c.updateTelefone(rotulo,valor);
+    }
+    public boolean updateEmail(String rotulo, String valor, int indiceContatoNaLista) {
+        if (indiceContatoNaLista < 0 ||
+        indiceContatoNaLista >= contatos.size()) return false;
+        var c = contatos.get(indiceContatoNaLista);
+        return c.updateEmail(rotulo,valor);
+    }
+    public boolean removeTelefone(String rotulo, int indiceContatoNaLista) {
+        if (indiceContatoNaLista < 0 ||
+        indiceContatoNaLista >= contatos.size()) return false;
+        var c = contatos.get(indiceContatoNaLista);
+        return c.removeTelefone(rotulo);
+    }
+
+    public boolean removeEmail(String rotulo, int indiceContatoNaLista) {
+        if (indiceContatoNaLista < 0 ||
+        indiceContatoNaLista >= contatos.size()) return false;
+        var c = contatos.get(indiceContatoNaLista);
+        return c.removeEmail(rotulo);
+    }
+
+    @Override
+    public String toString() {
+        return contatos.toString();
+    }
 }
