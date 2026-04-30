@@ -10,10 +10,10 @@ public class Contato {
     private ColecaoTelefone telefones;
     private ColecaoEmail emails;
 
-    public Contato(String nome, String sobrenome, LocalDate dN) {
+    public Contato(String nome, String sobrenome, LocalDate dataNasc) {
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.dataNasc = dN;
+        this.dataNasc = dataNasc;
         // Composição
         this.telefones = new ColecaoTelefone();
         this.emails = new ColecaoEmail();

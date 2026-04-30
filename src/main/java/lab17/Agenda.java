@@ -25,16 +25,20 @@ public class Agenda {
         // retorna nulo se não achar o nome
         return null;
     }
-    public ArrayList<Contato> findContato(String nome, String sobrenome) {
+    public ArrayList<Contato> encontrarContato(String nome, String sobrenome) {
         ArrayList<Contato> encontrados = new ArrayList<>();
 
         for (Contato c : contatos) {
             if (c.getNome().equalsIgnoreCase(nome) &&
-                    c.getSobrenome().equalsIgnoreCase(sobrenome));
-
-            encontrados.add(c);
+                    c.getSobrenome().equalsIgnoreCase(sobrenome)) {
+                encontrados.add(c);
+            }
         }
         return encontrados;
+    }
+    // get para retorna a lista
+    public ArrayList<Contato> getContatos() {
+        return contatos;
     }
 
     public boolean removerContato(int indiceContatoNaLista) {
@@ -48,7 +52,7 @@ public class Agenda {
         if (indiceContatoNaLista < 0 ||
                 indiceContatoNaLista >= contatos.size()) return false;
         var c = contatos.get(indiceContatoNaLista);
-       return c.addEmail(rotulo, valor);
+       return c.addTelefone(rotulo, valor);
 
     }
 
