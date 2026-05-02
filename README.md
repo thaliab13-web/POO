@@ -14,9 +14,9 @@
 
 #### [Laboratório  3](src/main/java/lab03) - Prática com construtor, modificadores, sobrecarga, membros estáticos e finais
 
-#### [Laboratório  17](src/main/java/lab17) - Associação entre classes e diagrama de classes UML
+#### [Laboratório  4](src/main/java/lab04) - Lista de Exercicios - Modelagem UML e Associação entre Classes
 
-## Aulas 
+---
 
 #### [Aula 01](src/main/java/aula01) - Introdução a linguaguem Java
 
@@ -29,4 +29,6 @@
 #### [Aula 15](src/main/java/aula15) - Coleções Java: listas, conjuntos e mapas; for each, lambdas e method reference
 
 #### [Aula 16](src/main/java/aula16) - Associação entre classes e diagrama de classes UML
+
+#### [Aula  17](src/main/java/aula17) - Associação entre classes e diagrama de classes UML
 
