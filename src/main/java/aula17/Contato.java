@@ -1,6 +1,7 @@
-package lab17;
+package aula17;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Contato {
     private String nome;
@@ -45,10 +46,20 @@ public class Contato {
         return emails.update(rotulo, valor);
     }
 
+    DateTimeFormatter f = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     public String toString() {
         return String.format(
-                "Contato {nome='%s', sobrenome='%s', dataNasc=%s, telefones=%s, emails=%s}",
-                nome, sobrenome, dataNasc, telefones, emails
+                """
+                Nome: %s %s
+                Data de Nascimento: %s
+                Telefone: %s
+                Email: %s
+                """,
+                nome,
+                sobrenome,
+                dataNasc.format(f),
+                telefones,
+                emails
         );
 
     }

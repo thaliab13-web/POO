@@ -23,7 +23,6 @@ public class Aviao {
         // criando os motores e colocando dentro do avião
         // crie x motores e coloque dentro do avião
         for (int i = 0; i < motores; i++) {
-
             // criando um novo motor e passando o tipo do motor (helice ou turbina)
             this.motores.add(new MotorAviao(tipoDoMotor));
         }

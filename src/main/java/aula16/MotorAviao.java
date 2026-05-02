@@ -3,7 +3,6 @@ package aula16;
 public class MotorAviao {
 
     private String tipoDoMotor;
-
     // motor inicia Desligado = false
     private boolean estadoAtual = false;
 

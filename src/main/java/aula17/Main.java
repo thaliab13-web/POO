@@ -1,6 +1,4 @@
-package lab17;
-
-import java.time.LocalDate;
+package aula17;
 
 public class Main {
     static void main(String[] args) {

@@ -1,4 +1,4 @@
-package lab17;
+package aula17;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -52,6 +52,7 @@ public class App {
         }while (opcao != 6);
     }
     void adicionarContato() {
+        IO.println("Adicionar contato");
         var nome = IO.readln("Nome: ");
         var sobrenome = IO.readln("Sobrenome: ");
         String dataNascStr = IO.readln("Data nascimento: ");
@@ -89,6 +90,7 @@ public class App {
     }
 
     void removerContato() {
+        IO.println("Remover contato");
         var nome = IO.readln("Nome: ");
         var sobrenome = IO.readln("Sobrenome: ");
         var contatoEncontrado = agenda.encontrarContato(nome, sobrenome);
@@ -111,6 +113,7 @@ public class App {
     }
 
     void AtualizarContato() {
+        IO.println("Atualizar contato");
         var nome = IO.readln("Nome: ");
         var sobrenome = IO.readln("Sobrenome: ");
         var contatoEncontrado = agenda.encontrarContato(nome, sobrenome);
@@ -138,6 +141,7 @@ public class App {
                 var rotulo = IO.readln("Rótulo: ");
                 var numero = IO.readln("Novo número: ");
 
+                // se não tem o rotulo e numero da else
                 if (agenda.updateTelefone(rotulo, numero, indiceContatoNaLista)) {
                     IO.println("Telefone atualizado! ");
                 } else {
@@ -152,6 +156,8 @@ public class App {
                 } else {
                     IO.println("Erro ao atualizar email");
                 }
+            } else if (opcao == 0){
+                IO.println("Saindo...");
             } else {
                 IO.println("Opção inválida");
             }
@@ -159,6 +165,7 @@ public class App {
     }
 
     void listarContato() {
+        IO.println("Listar contato");
         var nome = IO.readln("Nome: ");
         var sobrenome = IO.readln("Sobrenome: ");
       // retornando a lista de contatos encontrados com ese nome e sobrenome
@@ -176,6 +183,7 @@ public class App {
     }
 
     void listarTodosContatos() {
+        IO.println("Listando todos os contatos");
         //pegando a lista de contatos com lista.getContatos
         for (Contato c : agenda.getContatos()) {
             IO.println(c);
