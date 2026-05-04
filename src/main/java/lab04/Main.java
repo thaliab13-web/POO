@@ -1,21 +1,48 @@
 package lab04;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class Main {
 
     static void main(String[] args) {
 
-        Motorista motorista = new Motorista("Thata", "1234567879");
-        Veiculo veiculo = new Veiculo("Sei la", "NAOqqq", 2010);
-        LocalDate dataRegistro = LocalDate.of(2021,4,12);
-        Registro registro = new Registro(dataRegistro, 15.5, veiculo, motorista);
-        Empresa empresa = new Empresa();
+        LocalDate dataVoo = LocalDate.of(2021,6,13);
+        LocalTime horaPartida = LocalTime.of(12,30);
+        Voo voo = new Voo(5,"Florida", dataVoo, horaPartida, 100);
+        Passageiro passageiro = new Passageiro("Thales", "email@gmail.com", 489889898);
+        Reserva reserva = new Reserva(voo, passageiro);
 
-        empresa.addMotorista(motorista);
-        empresa.addVeiculo(veiculo);
-        empresa.addRegistro(registro);
-        IO.println(empresa);
+        IO.println(reserva);
+
+
+
+        // Exercicio PASSAGEM AEREA
+//        Motorista motorista = new Motorista("Thata", "1234567879");
+//        Veiculo veiculo = new Veiculo("Sei la", "NAOqqq", 2010);
+//        LocalDate dataRegistro = LocalDate.of(2021,4,12);
+//        Registro registro = new Registro(dataRegistro, 15.5, veiculo, motorista);
+//        Empresa empresa = new Empresa();
+//
+//        empresa.addMotorista(motorista);
+//        empresa.addVeiculo(veiculo);
+//        empresa.addRegistro(registro);
+//        IO.println(empresa);
+//
+//        IO.println("------------------------------------------------");
+//
+//        empresa.atualizarMotorista("1234567879", "Novo Nome");
+//        empresa.atualizarVeiculo("NAOqqq", "Nova Placa");
+//        IO.println(empresa);
+//
+//        IO.println("--------------------------------------------");
+//
+//        empresa.removerMotorista(motorista);
+//        empresa.removerVeiculo(veiculo);
+//        empresa.removerRegistro(registro);
+//        IO.println(empresa);
+
+
 
 //-------------------------------------------------------------------------------------------------
         // Exercicio FILME

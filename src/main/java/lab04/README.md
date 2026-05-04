@@ -2,6 +2,38 @@
 classDiagram
     direction LR
     
+    class Voo {
+        -numero int
+        -destino String
+        -data LocalDate
+        -horaPartida double
+        -capacidadeMax int   
+        +Voo(numero:int, destino:String, data:LocalDate, horaPartida:double, capacidadeMax:int)
+        +toString()
+    }
+    class Passageiro {
+        -nome String
+        -email String
+        -telefone int
+        +Passageiro(nome:String, email:String, telefone:int)
+        +toString()
+    }
+    class Reserva {
+        -Voo voo
+        -Passageiro passageiro
+        +Reserva(Voo:voo, Passageiro passageiro)
+    }
+    
+    Reserva "0..*" --> "1" Passageiro
+    Reserva "0..*" --> "1" Voo
+````
+
+
+
+````mermaid
+classDiagram
+    direction LR
+    
     class Motorista {
         -nome String
         -cpf String
