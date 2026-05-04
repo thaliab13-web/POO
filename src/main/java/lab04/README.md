@@ -1,51 +1,149 @@
 ````mermaid
 classDiagram
     direction LR
-    class Ator {
+    
+    class Motorista {
         -nome String
-        -dataNasc LocalDate
-        +Ator(nome:String, dataNasc:LocalDate)
+        -cpf String
+        +Motorista(nome:String, cpf:String)
         +toString()
     }
     
-    class Avaliacao {
-        -nota int
-        -comentario String
-        -usuario Usuario
-        -filme Filme
-        +Avaliacao(nota:int, comentario:String, usuario:Usuario, filme:Filme)
+    class Veiculo {
+        -modelo String
+        -placa String
+        -anoFabri int
+        +Veiculo(modelo:String, placa:String, anoFabri:int)
+        +getPlaca()
+        +setModelo(String novoModelo)
         +toString()
     }
     
-    class Usuario {
-        -nome String
-        -email String
-        -senha String
-        +Usuario(nome:String, email:String, senha:String)
+    class Registro {
+        -data LocalDate
+        -distacia double
+        -Veiculo veiculo
+        -Motorista motorista
+        +Registro(data:LocalDate, distacia:double, Veiculo:veiculo, Motorista motorista)
         +toString()
     }
-    class Filme {
-        -titulo String
-        -anoLanc int
-        -genero String
-        -diretor Diretor
-        -atores ArrayList~Ator~
-        -avaliacoes ArrayList~Avaliacao~
-        +Filme(titulo:String, anoLanc:int, genero:String, diretor:Diretor)
+    
+    class Empresa {
+        -ArrayList~Motorista~ motoristas
+        -ArrayList~Veiculo~ veiculos
+        -ArrayList~Registro~ registros
+        +Empresa()
+        +addMotorista(Motorista m)
+        +addVeiculo(Veiculo v)
+        +addRegistro(Registro r)
+        +removeMotorista(Motorista m)
+        +removeVeiculo(Veiculo v)
+        +removeRegistro(Registro r)
+        +atualizarMotorista(String:cpf, String:novoNome)
+        +atualizarVeiculo(String:placa, String:novoModelo)
         +toString()
     }
-    class Diretor {
-        -nome String
-        -email String
-        +Diretor(nome:String, email:String)
-        +toString()
-    }
-    Filme "0..*" <-- "1" Diretor
-    Filme "1..*" <-- "1..*" Ator
-    Filme "1" *-- "1..*" Avaliacao
-    Usuario "1" --> "0..*" Avaliacao
+    
+    Empresa "1" *-- "0..*" Registro
+    Registro "0..*" --o "1" Motorista
+    Registro "0..*" --o "1" Veiculo
+````
 
 
+[//]: # ()
+[//]: # (````mermaid)
+
+[//]: # ()
+[//]: # (classDiagram)
+
+[//]: # (    direction LR)
+
+[//]: # (    class Ator {)
+
+[//]: # (        -nome String)
+
+[//]: # (        -dataNasc LocalDate)
+
+[//]: # (        +Ator&#40;nome:String, dataNasc:LocalDate&#41;)
+
+[//]: # (        +toString&#40;&#41;)
+
+[//]: # (    })
+
+[//]: # (    )
+[//]: # (    class Avaliacao {)
+
+[//]: # (        -nota int)
+
+[//]: # (        -comentario String)
+
+[//]: # (        -usuario Usuario)
+
+[//]: # (        -filme Filme)
+
+[//]: # (        +Avaliacao&#40;nota:int, comentario:String, usuario:Usuario, filme:Filme&#41;)
+
+[//]: # (        +toString&#40;&#41;)
+
+[//]: # (    })
+
+[//]: # (    )
+[//]: # (    class Usuario {)
+
+[//]: # (        -nome String)
+
+[//]: # (        -email String)
+
+[//]: # (        -senha String)
+
+[//]: # (        +Usuario&#40;nome:String, email:String, senha:String&#41;)
+
+[//]: # (        +toString&#40;&#41;)
+
+[//]: # (    })
+
+[//]: # (    class Filme {)
+
+[//]: # (        -titulo String)
+
+[//]: # (        -anoLanc int)
+
+[//]: # (        -genero String)
+
+[//]: # (        -diretor Diretor)
+
+[//]: # (        -atores ArrayList~Ator~)
+
+[//]: # (        -avaliacoes ArrayList~Avaliacao~)
+
+[//]: # (        +Filme&#40;titulo:String, anoLanc:int, genero:String, diretor:Diretor&#41;)
+
+[//]: # (        +toString&#40;&#41;)
+
+[//]: # (    })
+
+[//]: # (    class Diretor {)
+
+[//]: # (        -nome String)
+
+[//]: # (        -email String)
+
+[//]: # (        +Diretor&#40;nome:String, email:String&#41;)
+
+[//]: # (        +toString&#40;&#41;)
+
+[//]: # (    })
+
+[//]: # (    Filme "0..*" <-- "1" Diretor)
+
+[//]: # (    Filme "1..*" <-- "1..*" Ator)
+
+[//]: # (    Filme "1" *-- "1..*" Avaliacao)
+
+[//]: # (    Usuario "1" --> "0..*" Avaliacao)
+
+[//]: # ()
+[//]: # ()
 ````
 
 
