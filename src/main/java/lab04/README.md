@@ -23,9 +23,9 @@ classDiagram
         -Passageiro passageiro
         +Reserva(Voo:voo, Passageiro passageiro)
     }
-    
-    Reserva "0..*" --> "1" Passageiro
+    Passageiro "1" <-- "0..*" Reserva 
     Reserva "0..*" --> "1" Voo
+   
 ````
 
 
