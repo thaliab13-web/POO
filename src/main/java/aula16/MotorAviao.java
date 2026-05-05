@@ -3,38 +3,41 @@ package aula16;
 public class MotorAviao {
 
     private String tipoDoMotor;
-    // motor inicia Desligado = false
-    private boolean estadoAtual = false;
+    private boolean ligado;
 
     // Construtor (Inicializando os atributos)
-    public MotorAviao(String tipoDoMotor) {
-        if ("turbina".equals(tipoDoMotor) || "hélice".equals(tipoDoMotor)) {
-            this.tipoDoMotor = tipoDoMotor;
-        } else {
-            this.tipoDoMotor = "hélice";
-        }
+    public MotorAviao(String tipoDoMotor, boolean ligado) {
+        tipoDoMotor = tipoDoMotor.toLowerCase(); // converte pra minusculo
+        if("turbina".equals(tipoDoMotor) || "helice".equals(tipoDoMotor)) {
+           this.tipoDoMotor = tipoDoMotor;
+       } else {
+           this.tipoDoMotor = "helice";
+       }
+       this.ligado = false;
     }
 
-
-    // método ligar Motor
-    public boolean ligar() {
-        if (!estadoAtual) {
-            estadoAtual = true;
-        }// senão permanece como esta
-        return estadoAtual;
+    public void ligar() {
+        ligado = true;
     }
-    // método desligar Motor
-    public boolean desligar() {
-       // (estadoAtual == true)
-        if(estadoAtual) {
-            estadoAtual = false;
-        }
-        return estadoAtual;
+    public void desligar() {
+        ligado = false;
     }
-    // ou public boolean desligar()
-    // estadoAtual = false;
-    // return estadoAtual;
-
+    public boolean isLigado() {
+        return ligado;
+    }
+    @Override
+    public String toString() {
+        return String.format(
+                """     
+                        Tipo: 
+                        %s
+                        Ligado:
+                        %s
+                        """,
+                tipoDoMotor,
+                ligado
+        );
+    }
 
 }
 
