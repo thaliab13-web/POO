@@ -6,9 +6,10 @@ import java.util.concurrent.TimeUnit;
 import edu.princeton.cs.algs4.Draw;
 
 public class App {
-    static void main(String[] args) {
+    static void main(String[] args) throws InterruptedException {
 
         Draw draw = new Draw();
+
         draw.setCanvasSize(800,800);
         draw.setYscale(0,800);
         draw.setXscale(0,800);
@@ -30,7 +31,7 @@ public class App {
             draw.line(i, 0, i, 800);
             draw.line(0, i, 800, i);
            }
-    }
+
     draw.show();
 
     draw.setFontSize(30);
@@ -41,5 +42,6 @@ public class App {
         draw.show();
         TimeUnit.SECONDS.sleep(1);
 
+    }
     }
 }
