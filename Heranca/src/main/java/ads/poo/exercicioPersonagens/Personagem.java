@@ -1,0 +1,33 @@
+package ads.poo.exercicioPersonagens;
+
+public abstract class Personagem {
+
+    protected int vida;
+    protected double ataque;
+    protected double velocidade;
+
+    public Personagem(int vida, double ataque, double velocidade){
+        this.vida = vida;
+        this.ataque = ataque;
+        this.velocidade = velocidade;
+    }
+
+    public String mover() {
+        return "Personagem movendo";
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                """
+                Vida: %d
+                Ataque: %.2f
+                Velocidade: %.2f
+                """,
+                vida,
+                ataque,
+                velocidade
+        );
+    }
+
+}
