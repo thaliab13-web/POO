@@ -20,6 +20,7 @@ public abstract class Personagem {
     public String toString() {
         return String.format(
                 """
+                
                 Vida: %d
                 Ataque: %.2f
                 Velocidade: %.2f

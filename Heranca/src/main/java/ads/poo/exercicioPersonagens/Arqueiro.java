@@ -1,6 +1,7 @@
 package ads.poo.exercicioPersonagens;
 
-public class Arqueiro extends Personagem{
+public class Arqueiro extends Personagem implements Guerreiro{
+
     private int qtdFlexa;
 
     public Arqueiro(int vida, double ataque, double velocidade, int qtdFlexa) {
@@ -8,17 +9,22 @@ public class Arqueiro extends Personagem{
         this.qtdFlexa = qtdFlexa;
     }
 
-    public String mover() {
-        return "Alqueiro movendo seu arco e flecha";
-    }
+    @Override
     public String atacar() {
-        return "Alqueiro esta lacando sua flecha";
+        return "Arqueiro disparou uma flecha. Flechas restantes: " + qtdFlexa;
     }
+
+    @Override
+    public String mover() {
+        return "Arqueiro se escondeu";
+    }
+
     @Override
     public String toString() {
-        return "Alqueiro -> " +
-                super.toString() +
-                "Quantidade de Flexa: " + qtdFlexa;
+        return """
+                Arqueiro -> 
+                """ +
+                super.toString();
     }
 
 

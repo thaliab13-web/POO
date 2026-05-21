@@ -1,22 +1,32 @@
 package ads.poo.exercicioPersonagens;
 
-public class Cavaleiro extends Personagem{
+public class Cavaleiro extends Personagem implements Guerreiro{
     private boolean cavalgando;
 
     public Cavaleiro(int vida, double ataque, double velocidade, boolean cavalgando) {
         super(vida, ataque, velocidade);
-        this.cavalgando = false;
+        this.cavalgando = cavalgando;
     }
+
+    @Override
     public String mover() {
-        return "Cavaleiro montou no cavalo";
+        if (cavalgando) {
+            return "Cavaleiro cavalgou rapidamente";
+        }
+        return "Cavaleiro caminhou";
     }
+
+    @Override
     public String atacar() {
-        return "Cavaleiro atacou com sua lanca";
+        return "Cavaleiro realizou um ataque pesado";
     }
+    @Override
     public String toString() {
-        return "Cavaleiro " +
+        return """
+                Cavaleiro -> 
+                """ +
                 super.toString() +
-                "Cavalgando:  " + cavalgando;
+                "Cavalgando:  " + cavalgando + "\n";
 
     };
 }

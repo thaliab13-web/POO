@@ -4,9 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         Arqueiro arqueiro = new Arqueiro(32,2,3,7);
-        Cavaleiro cavaleiro = new Cavaleiro(50, 3, 2, false);
-        Aldeao aldeao = new Aldeao(25, 2, 1, "Lenhador");
-        Personagem personagem = new Personagem(25, 1, 3.4);
+        Cavaleiro cavaleiro = new Cavaleiro(50, 3, 2, true);
+        Aldeao aldeao = new Aldeao(25, 2, 1);
 
 
         Personagem[] vetor = new Personagem[3];
@@ -15,8 +14,14 @@ public class Main {
         vetor[2] = arqueiro;
 
         for (Personagem aux : vetor) {
-            IO.println(aux.atacar());
+
+            IO.println(aux);
             IO.println(aux.mover());
+
+            if (aux instanceof Guerreiro guerreiro) {
+                IO.println(guerreiro.atacar());
+            }
+            IO.println("------------------------------------");
         }
 
 
