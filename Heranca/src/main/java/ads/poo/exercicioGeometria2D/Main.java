@@ -9,5 +9,5 @@ public class Main {
 
     Linha l = new Linha("Preta",p1,p2);
 
-        System.out.println(c.desenhar());
+
 }

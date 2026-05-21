@@ -12,9 +12,8 @@ public abstract class Personagem {
         this.velocidade = velocidade;
     }
 
-    public String mover() {
-        return "Personagem movendo";
-    }
+    public abstract String mover();
+
 
     @Override
     public String toString() {

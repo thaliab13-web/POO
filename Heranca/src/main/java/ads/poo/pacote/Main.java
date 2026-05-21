@@ -1,8 +1,4 @@
-package ads.poo;
-
-import ads.poo.pacote.Dimensao;
-import ads.poo.pacote.SemFio;
-import ads.poo.pacote.Telefone;
+package ads.poo.pacote;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
