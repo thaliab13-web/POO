@@ -3,19 +3,18 @@ import edu.princeton.cs.algs4.Draw;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class App {
     static void main(String[] args) throws Exception {
 
         Draw draw = new Draw();
-
         draw.setCanvasSize(800, 600);
-
         draw.setXscale(0, 800);
         draw.setYscale(0, 600);
-
         draw.enableDoubleBuffering();
+
 
         ArrayList<Relogio> relogios = new ArrayList<>();
 
