@@ -12,7 +12,10 @@ public class Retangulo extends ObjetoDeDesenho implements FormaGeometrica {
 
     @Override
     public String desenhar() {
-        return "Desenhando Retangulo";
+        return "Retangulo [Cor: " + corDaLinha +
+                ", Vertice1: " + verticeF.getX() + ", " + verticeF.getY() +
+                ", Vertice2: " + verticeL.getX() + ", " + verticeL.getY() + " ]";
+
     }
 
     @Override

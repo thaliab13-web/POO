@@ -12,6 +12,7 @@ public abstract class Personagem {
         this.velocidade = velocidade;
     }
 
+    // metodo abstrato, toda classe que herda deve sobrescrever esses metodo
     public abstract String mover();
 
 

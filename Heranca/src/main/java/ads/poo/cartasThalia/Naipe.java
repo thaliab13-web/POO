@@ -1,4 +1,4 @@
-package ads.poo.cartas;
+package ads.poo.cartasThalia;
 
 public enum Naipe {
 

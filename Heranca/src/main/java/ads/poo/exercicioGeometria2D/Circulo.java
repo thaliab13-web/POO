@@ -12,7 +12,10 @@ public class Circulo extends ObjetoDeDesenho implements FormaGeometrica{
 
     @Override
     public String desenhar() {
-        return "Desenhando circulo";
+        return "Cor do Circulo=[" + corDaLinha +
+                ", centro(" + centro.getX() +
+                ", " + centro.getY() +
+                "), raio:" + raio;
     }
 
     @Override
