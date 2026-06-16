@@ -8,10 +8,10 @@ public enum Naipe {
     PAUS(4, 'p');
 
     public final int valor;
-    public final char inicia;
+    public final char inicial;
 
-    Naipe(int valor, char inicia) {
+    Naipe(int valor, char inicial) {
         this.valor = valor;
-        this.inicia = inicia;
+        this.inicial = inicial;
     }
 }
