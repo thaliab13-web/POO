@@ -1,17 +1,36 @@
 package ads.poo;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// Faça um programa que o usuário deve informar a sigla da disciplina, todos os dias da semana que tem aula dessa disciplina.
+//Imprima - Na disciplina POO vc tem aulas nos seguintes dias:
+// - seg
+// - ter
 public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+    static void main(String[] args) {
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
+    String sigla = IO.readln("Informe a disciplina: ");
+
+    String[] dias = new String[5];
+    int qtdDias = 0;
+
+    while(true) {
+        String diaAula = IO.readln("Informe os dias da semana (ou nao para encerrar): ");
+
+        if (diaAula.equalsIgnoreCase("seg") || diaAula.equalsIgnoreCase("ter") || diaAula.equalsIgnoreCase("qua") || diaAula.equalsIgnoreCase("qui") || diaAula.equalsIgnoreCase("sex")) {
+            dias[qtdDias] = diaAula;
+            qtdDias++;
+
+        } else if (diaAula.equalsIgnoreCase("nao")) {
+            break;
+        } else {
+            IO.println("Tente novamente");
         }
+
+    }
+        IO.println("A disciplina " + sigla + " sao nos dias da semana: " );
+    for (int i = 0; i < qtdDias; i++) {
+        IO.println(dias[i]);
+    }
+
+        IO.println("Encerrando o programa...");
     }
 }
